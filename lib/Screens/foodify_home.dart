@@ -1,12 +1,13 @@
+import 'package:e_comerce/Screens/BottomNavBarScreens/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:foodify/Screens/app_starting.dart';
-import 'package:foodify/Screens/BottomNavBarScreens/cart_screen.dart';
-import 'package:foodify/Screens/BottomNavBarScreens/home_screen.dart';
-import 'package:foodify/Screens/BottomNavBarScreens/notification_screen.dart';
-import 'package:foodify/Screens/BottomNavBarScreens/serach_screen.dart';
-import 'package:foodify/Screens/BottomNavBarScreens/wishlist_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../app_starting.dart';
+import '../bottom_nav_bar_screens/serach_screen.dart';
+import 'BottomNavBarScreens/cart_screen.dart';
+import 'BottomNavBarScreens/notification_screen.dart';
+import 'BottomNavBarScreens/wishlist_screen.dart';
 
 int grayColor = 0xffDFE2E5;
 int grayColorDark = 0xffC6C9CC;

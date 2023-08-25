@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodify/Screens/foodify_home.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../foodify_home.dart';
 
 int orangeColor = 0xffFF774C;
 
