@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NotificationScreen extends StatelessWidget {
-  const NotificationScreen ({Key? key}) : super(key: key);
+class SettingsScreen extends StatelessWidget {
+  const SettingsScreen ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Notification Screen"),
+        child: Text("Settings Screen"),
       ),
     );
   }
