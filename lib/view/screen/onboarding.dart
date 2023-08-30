@@ -15,7 +15,7 @@ class OnBoarding extends StatelessWidget {
     Get.put(OnBoardingControllerImp());
     return Scaffold(
       backgroundColor: ColorApp.primaryColor,
-      body: const Column(
+      body:  Column(
         children: [
           Expanded(
             flex: 3,
@@ -31,7 +31,7 @@ class OnBoarding extends StatelessWidget {
                     flex: 3,
                   ),
                   //custom button
-                  CustomButtonOnBoarding(),
+                  CustomButtonOnBoard(),
                   Spacer(
                     flex: 1,
                   ),

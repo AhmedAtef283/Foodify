@@ -4,7 +4,9 @@ import 'package:get/get.dart';
 
 class MainTextField extends GetView<OnBoardingControllerImp> {
   final String hintText;
-  const MainTextField(this.hintText, {super.key});
+  TextEditingController? controllerr = TextEditingController();
+
+  MainTextField(this.hintText,this.controllerr ,{super.key});
 
   @override
   Widget build(
@@ -23,7 +25,19 @@ class MainTextField extends GetView<OnBoardingControllerImp> {
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: TextField(
+          child: TextFormField(
+            validator: (value) {
+              if (value!.isEmpty) {
+                return "This field can't be empty";
+              } else {
+                return null;
+              }
+            },
+            onFieldSubmitted: (value){
+              controllerr!.text = value;
+              print(value);
+            },
+            controller: controllerr,
             decoration: InputDecoration(
               border: InputBorder.none,
               hintText: hintText,

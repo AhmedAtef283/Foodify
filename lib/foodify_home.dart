@@ -2,16 +2,15 @@ import 'package:e_comerce/app_starting.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'bottom_nav_bar_screens/cart_screen.dart';
 import 'bottom_nav_bar_screens/home_screen.dart';
-import 'bottom_nav_bar_screens/notification_screen.dart';
 import 'bottom_nav_bar_screens/serach_screen.dart';
-import 'bottom_nav_bar_screens/wishlist_screen.dart';
+import 'bottom_nav_bar_screens/profile_screen.dart';
+import 'drawer.dart';
 
 int grayColor = 0xffDFE2E5;
 int grayColorDark = 0xffC6C9CC;
 int currentindex = 0;
+
 
 class FoodifyHome extends StatefulWidget {
   const FoodifyHome({Key? key}) : super(key: key);
@@ -22,13 +21,12 @@ class FoodifyHome extends StatefulWidget {
 
 List<dynamic> screens = [
   HomeScreen(),
-  WishlistScreen(),
   SearchScreen(),
-  NotificationScreen(),
-  CartScreen()
+  ProfileScreen(),
 ];
 
 class _FoodifyHomeState extends State<FoodifyHome> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,22 +78,9 @@ class _FoodifyHomeState extends State<FoodifyHome> {
               ),
             ),
           ],
-          leading: Padding(
-            padding: const EdgeInsets.all(6.0),
-            child: Container(
-
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadiusDirectional.circular(16),
-              ),
-              child: IconButton(
-                onPressed: (){},
-                icon: Icon(Icons.menu_rounded,color: Colors.black),
-              ),
-
-            ),
-          ),
         ),
+        drawer:NavDrawer(),
+
         body: screens[currentindex],
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
@@ -104,20 +89,12 @@ class _FoodifyHomeState extends State<FoodifyHome> {
                 icon: Icon(Icons.home_outlined, color: Color(grayColorDark)),
                 label: "Home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.heart_broken_outlined,
-                    color: Color(grayColorDark)),
-                label: "Wishlist"),
-            BottomNavigationBarItem(
                 icon: Icon(Icons.search_outlined, color: Color(grayColorDark)),
                 label: "Search"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.notifications_outlined,
+                icon: Icon(Icons.person,
                     color: Color(grayColorDark)),
-                label: "Notification"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_cart_outlined,
-                    color: Color(grayColorDark)),
-                label: "Cart"),
+                label: "Profile"),
           ],
           currentIndex: currentindex,
           type: BottomNavigationBarType.fixed,

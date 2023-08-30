@@ -37,7 +37,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^5.1.0
   dio: ^5.3.2
-  
+  firebase_auth: ^4.8.0
+  firebase_core: ^2.15.1
+  shared_preferences: ^2.2.0
+
+
+
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +78,9 @@ flutter:
   assets:
     - assets/images/
     - assets/images/image 2.png
+    - assets/images/Screenshot 2023-08-15 232838.png
+    - assets/images/IMG_20230810_110122_406.jpg
+    - assets/images/Screenshot 2023-08-30 062735.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
