@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "70812808856",
+    "project_id": "foodify-app-293fa",
+    "storage_bucket": "foodify-app-293fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70812808856:android:158be099fa936743bac2ed",
+        "android_client_info": {
+          "package_name": "com.example.e_comerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70812808856-jhu6pf41fif9i4k384rl0s2hqosc5e85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEE7Fnohvtqx8tUkKqY6NChc0bGmOR5yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70812808856-jhu6pf41fif9i4k384rl0s2hqosc5e85.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "70812808856-srkrt0fgr87p0j4tvkjpu2gfjrmvg7m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eComerce"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
