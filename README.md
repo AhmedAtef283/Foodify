@@ -22,6 +22,11 @@ Foodify is a versatile Flutter app designed to cater to both restaurant owners a
 
 - **Detailed Information**: Access detailed information about each dish, including ingredients, allergen information, and customer reviews.
 
+## Firebase Authentication
+
+Foodify uses Firebase Authentication for user registration and login. Firebase provides a secure and reliable way to manage user accounts and ensures that your data remains safe.
+
+
 ## Installation
 
 To get started with Foodify, follow these steps:
