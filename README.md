@@ -22,10 +22,6 @@ Foodify is a versatile Flutter app designed to cater to both restaurant owners a
 
 - **Detailed Information**: Access detailed information about each dish, including ingredients, allergen information, and customer reviews.
 
-- **Easy Ordering**: Place orders directly through the app and choose between delivery or pickup options.
-
-- **Favorites and Ratings**: Save your favorite restaurants and rate dishes to help others make informed decisions.
-
 ## Installation
 
 To get started with Foodify, follow these steps:
