@@ -24,10 +24,10 @@ class _SplashScreenState extends State<LogoScreen> {
           Spacer(),
           Image(
             image: const AssetImage("assets/images/Group.png"),
-            height: MediaQuery.of(context).size.height * 0.5,
+            height: MediaQuery.of(context).size.height * 0.8,
             width: MediaQuery.of(context).size.width * 0.5,
           ),
-          Spacer(),
+          const Spacer(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(

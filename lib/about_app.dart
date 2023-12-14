@@ -12,7 +12,7 @@ class AboutApp extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xffF7F7FB),
         shadowColor: Color(0xffF7FFB),
-        elevation: 0,
+        elevation: 1,
         foregroundColor: Colors.white,
         centerTitle: true,
         title:Column(
